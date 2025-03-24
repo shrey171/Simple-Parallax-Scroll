@@ -37,10 +37,11 @@ const getCardsAnimation = () => {
   const cards = gsap.utils.toArray(".card");
 
   cards.forEach(card => {
-    const fadeInTarget = card.querySelector('.card-scroll-wrapper');
+    const fadeInTarget = card.querySelector(".card-scroll-wrapper");
     const image = card.querySelector("img");
     gsap.set(image, {
       height: `${100 + parallaxScale}%`,
+      xPercent: -50,
     });
 
     // fade into view
@@ -71,9 +72,3 @@ document.addEventListener("DOMContentLoaded", () => {
   getCardsAnimation();
   getHeaderAnimation();
 });
-
-// gsap.set(image, {
-//   height: `${100 + parallaxScale}%`,
-//   xPercent: -50,
-//   left: '50%'
-// });

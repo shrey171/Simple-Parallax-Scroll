@@ -47,11 +47,10 @@ body {
   position: relative;
 }
 
-.card img {
+.card-image {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 .card-content {
